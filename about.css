@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove blue color and underline from all links */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #7c3aed; /* Purple hover */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* About Page Content */
+.about-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+/* Common Animation Style */
+.about-page h1,
+.about-page h2,
+.about-page p,
+.about-page li {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Show Class for Scroll Animation */
+.about-page .show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Heading Styling */
+.about-page h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: #222;
+  border-left: 5px solid #7c3aed;
+  padding-left: 15px;
+}
+
+.about-page h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Paragraph Styling with Hover Effect */
+.about-page p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.about-page p:hover {
+  transform: scale(1.1);
+  font-size: 20px;
+  color: #7c3aed;
+}
+
+/* List Styling */
+.about-page ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.about-page li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.about-page li:hover {
+  transform: scale(1.1);
+  font-size: 20px;
+  color: #7c3aed;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #555;
+  font-size: 16px;
+  margin-top: 50px;
+}
+.about-page p:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
