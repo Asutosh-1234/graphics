@@ -1,3 +1,4 @@
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -12,3 +13,4 @@ const observer = new IntersectionObserver((entries) => {
   
   // Observe each target element
   targets.forEach(element => observer.observe(element));
+  

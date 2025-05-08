@@ -1,37 +1,47 @@
 /* General Styling */
 body {
   font-family: 'Inter', sans-serif;
-  color: #333;
+  color: #f7f7f7;
   line-height: 1.8;
-  background-color: #fff;
+  background: linear-gradient(135deg, #2b2c34, #212332, #4b5f75, #1f2025);
   margin: 0;
   padding: 0;
+  background-attachment: fixed;
 }
 
-/* Remove blue color and underline from all links */
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #7c3aed; /* Purple hover */
+  color: #ff5c8d; /* Neon Pink */
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(255, 92, 141, 0.3); 
 }
 
-/* Navbar Styling */
-.navbar {
+/* Navbar Styling */.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ff5c8d, #00e6b8, #9b2cf0); /* Neon Gradient similar to body */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adding a slightly stronger shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #ff5c8d; /* Subtle border at the bottom for extra definition */
 }
 
 .navbar .logo img {
   height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.1);
 }
 
 .navbar ul {
@@ -40,11 +50,21 @@ a:hover {
   gap: 30px;
 }
 
-/* About Page Content */
+.navbar ul li {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li:hover {
+  transform: translateY(-5px);
+  color: #ff5c8d; /* Neon Pink */
+}
+
 .about-page {
   max-width: 1200px;
   margin: auto;
-  padding: 50px 30px;
+  padding: 60px 30px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 /* Common Animation Style */
@@ -57,42 +77,43 @@ a:hover {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Show Class for Scroll Animation */
 .about-page .show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Heading Styling */
 .about-page h1 {
-  font-size: 36px;
-  margin-bottom: 25px;
-  color: #222;
-  border-left: 5px solid #7c3aed;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #ff61a6;
+  border-left: 5px solid #00e6b8;
   padding-left: 15px;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .about-page h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-top: 40px;
-  margin-bottom: 20px;
-  color: #444;
+  margin-bottom: 25px;
+  color: #ff5c8d;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Paragraph Styling with Hover Effect */
 .about-page p {
   margin-bottom: 20px;
   font-size: 18px;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 
 .about-page p:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   font-size: 20px;
-  color: #7c3aed;
+  color: #00e6b8;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* List Styling */
 .about-page ul {
   list-style-type: disc;
   padding-left: 25px;
@@ -101,26 +122,89 @@ a:hover {
 .about-page li {
   margin-bottom: 15px;
   font-size: 18px;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 
 .about-page li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   font-size: 20px;
-  color: #7c3aed;
+  color: #ff5c8d;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Styling */
 .footer {
   text-align: center;
-  padding: 20px;
-  background-color: #f7f7f7;
-  color: #555;
+  padding: 30px;
+  background: linear-gradient(135deg, #9b2cf0, #00e6b8, #ff5c8d); /* Neon gradient matching header */
+  color: #ffffff;
   font-size: 16px;
   margin-top: 50px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2); /* Adding depth with shadow */
+  position: relative;
 }
-.about-page p:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff5c8d; /* Neon Pink */
+  transform: translateY(-2px);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.footer p:hover {
+  color: #ff5c8d; /* Matching footer link color */
   cursor: pointer;
+}
+
+/* Footer Moving Gradient Animation */
+.footer-animation {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 5px;
+  background: linear-gradient(90deg, #00ffc3, #ff00c8, #00ffc3);
+  animation: moveGradient 5s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about-page {
+    padding: 40px 20px;
+  }
+
+  .about-page h1 {
+    font-size: 32px;
+  }
+
+  .about-page h2 {
+    font-size: 28px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
 }

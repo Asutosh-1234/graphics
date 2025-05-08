@@ -1,104 +1,228 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  body {
-    background-color: #ffffff;
-    color: #333;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .contact-hero {
-    padding: 80px 50px;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .contact-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact-hero p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .contact-form-section {
-    padding: 50px;
-    max-width: 700px;
-    margin: auto;
-  }
-  
-  .contact-form .input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
-  
-  .contact-form label {
-    margin-bottom: 8px;
-    font-weight: 600;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-  
-  .contact-form textarea {
-    height: 150px;
-    resize: none;
-  }
-  
-  .contact-form button {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #555;
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    margin-top: 50px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-  .small-logo {
-    width: 120px;
-    height: auto;
+/* Body Background */
+body {
+  background: linear-gradient(135deg, #57C1FF, #6A69FF); /* Smooth gradient with cool colors */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #6A69FF; /* Deep Blue color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .logo img {
+  height: 45px;
+  width: auto;
+  transition: transform 0.3s ease; /* Smooth logo hover */
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.1); /* Slight zoom effect on logo hover */
+}
+
+.navbar a:hover {
+  color: #FFD700; /* Bright gold for hover effect */
+  transform: translateY(-3px);
+}
+
+/* Hero Section */
+.contact-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #3B7B9C; /* Calming teal-blue */
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 50px;
+  max-width: 700px;
+  margin: auto;
+  background-color: #F7F7F7; /* Light background for form */
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00B5E2; /* Focus effect */
+  box-shadow: 0 0 10px rgba(0, 181, 226, 0.5);
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #00B5E2; /* Blue button */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #007B9E;
+  transform: translateY(-3px); /* Button hover effect */
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #3B7B9C; /* Matching footer background */
+  color: #fff;
+  margin-top: 50px;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Footer Animation (Moving gradient for additional effect) */
+.footer-animation {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 5px;
+  background: linear-gradient(90deg, #00ffc3, #ff00c8, #00ffc3);
+  animation: moveGradient 8s linear infinite; /* Slower animation */
+}
+
+@keyframes moveGradient {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Footer Wave Animation */
+.footer-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100px;
+  background: url('https://svgshare.com/i/uFc.svg') repeat-x;
+  background-size: contain;
+  animation: waveMove 10s linear infinite;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional Animation for Smoothness */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation: fadeInUp 1s forwards;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .footer-wave {
+    height: 50px;
+  }
+}

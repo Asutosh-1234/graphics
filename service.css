@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #fff;
-  color: #333;
+  background: linear-gradient(75deg, #2c3e50, #4f6d7a, #7f8c8d, #34495e); /* Deep blue-green to slate gray */
+  color: #ffffff;
 }
 
 .navbar {
@@ -10,8 +10,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #4b79a1, #f2b3d2); /* Soft muted teal and pink gradient */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
 .navbar .logo img {
@@ -26,31 +26,35 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #f2f2f2;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #007BFF;
+  color: #8e44ad; /* Purple hover for contrast */
+  transform: translateY(-3px);
 }
 
 /* Hero Section */
 .service-hero {
   text-align: center;
   padding: 80px 20px;
-  background-color: #f5f5f5;
+  background: linear-gradient(90deg, #2c3e50, #8e44ad, #3498db); /* Dreamy blue and lavender */
 }
 
 .service-hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Adding text-shadow for better visibility */
 }
 
 .service-hero p {
   font-size: 18px;
   max-width: 700px;
   margin: 0 auto;
+  line-height: 1.6;
+  color: #f2f2f2;
 }
 
 /* Services List */
@@ -62,11 +66,11 @@ body {
 }
 
 .service-card {
-  background-color: #fff;
+  background: linear-gradient(45deg, #6c7b8d, #9fa3b1, #c5c9d1); /* Subtle pastel gradient for cards */
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
 }
 
 .service-card h3 {
@@ -81,17 +85,20 @@ body {
 
 .service-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  background: linear-gradient(45deg, #4f6d7a, #a2b7c5, #c5c9d1); /* Lighter pastel gradient on hover */
+  cursor: pointer;
 }
 
 /* Footer */
 .footer {
-  background-color: #222;
-  color: #fff;
+  background: linear-gradient(135deg, #4f6d7a, #2c3e50, #34495e); /* Soft dark blues with slate gray */
+  color: #ffffff;
   text-align: center;
   padding: 25px 0;
   font-size: 16px;
   margin-top: 50px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.2); /* Softer shadow to match design */
 }
 
 /* Optional Animation */
@@ -108,4 +115,22 @@ body {
 
 .animate-up {
   animation: fadeInUp 1s forwards;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  color: #8e44ad; /* Purple hover effect */
+  transform: translateY(-2px);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.footer p:hover {
+  color: #8e44ad;
+  cursor: pointer;
 }
