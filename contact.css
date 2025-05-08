@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
@@ -208,3 +209,220 @@ body {
     }
   }
     
+=======
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth logo hover */
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Slight zoom effect on logo hover */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #00ffc3;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.contact-hero {
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Form Section */
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 30px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00ffc36c;
+  transition: box-shadow 0.5s ease;
+}
+
+.contact-container:hover {
+  box-shadow: 0 0 40px #00ffc3a1;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #00ffc3;
+  box-shadow: 0 0 5px rgba(0, 255, 195, 0.5); /* Added focus box shadow */
+}
+
+/* Submit Button */
+.btn {
+  background-color: #00ffc3;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #00e6b8;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 255, 195, 0.8); /* Add outline for focus */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #000;
+  color: #666;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Moving Gradient Animation in Footer */
+.footer-animation {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 5px;
+  background: linear-gradient(90deg, #00ffc3, #ff00c8, #00ffc3);
+  animation: moveGradient 8s linear infinite; /* Slower animation */
+}
+
+@keyframes moveGradient {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Particle Background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* Smooth Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Footer Wave Animation */
+.footer-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100px;
+  background: url('https://svgshare.com/i/uFc.svg') repeat-x;
+  background-size: contain;
+  animation: waveMove 10s linear infinite;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+>>>>>>> f85a6e2 (Update styles and content in HTML/CSS files)

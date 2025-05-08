@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -142,3 +143,148 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrast & Co. Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/Graphixxx.svg" alt="LumenXo Inc Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>We create strategy-driven brands, websites, and marketing.</h1>
+    </div>
+  </section>
+
+  <!-- Our Work Section -->
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>Our Work</h2>
+    <div class="project-grid">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/download (1).jpg" alt="Brand Refresh for TechCo">
+        <div class="project-info">
+          <h3>Brand Refresh for TechCo</h3>
+          <p>Branding / Strategy / Web</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/download (2).jpg" alt="Digital Campaign for FinGroup">
+        <div class="project-info">
+          <h3>Digital Campaign for FinGroup</h3>
+          <p>Web / Marketing</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/download (3).jpg" alt="Non-Profit Website Redesign">
+        <div class="project-info">
+          <h3>Non-Profit Website Redesign</h3>
+          <p>Web / UX / UI</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/image.png" alt="Luxury Brand Identity">
+        <div class="project-info">
+          <h3>Luxury Brand Identity</h3>
+          <p>Branding / Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Makes Us Different Section -->
+  <section class="difference" data-aos="fade-up" data-aos-duration="1200">
+    <h2>What makes us different from others</h2>
+    <p class="main-text">
+      At LumenXo Inc, we stand out as a design company by blending creativity with strategy,
+      ensuring every project is both visually captivating and purpose-driven. Our approach is deeply
+      collaborative, working closely with clients to understand their vision, goals, and audience.
+      We focus on delivering designs that not only stand the test of time but also foster meaningful
+      connections between brands and their customers. Whether it’s graphic design, web design, branding,
+      or UI/UX, we pride ourselves on crafting tailored solutions that are as innovative as they are effective.
+      What truly sets us apart is our dedication to quality, attention to detail, and the passion we put into every project,
+      big or small.
+    </p>
+
+    <!-- Creative Key Points -->
+    <div class="key-points">
+      <ul>
+        <li>🔥 Strategy-Driven Designs</li>
+        <li>💡 Client-Centric Collaboration</li>
+        <li>🎯 Timeless Branding</li>
+        <li>🚀 UI/UX with Real Impact</li>
+        <li>❤️ Passion & Attention to Detail</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" data-aos="fade-up" data-aos-duration="1000">
+    <h2 data-aos="fade-right" data-aos-duration="1200">Let’s Talk</h2>
+    <p data-aos="fade-left" data-aos-duration="1400">Ready to start your next project? Reach out today.</p>
+    <a href="contact_us.html" class="contact-btn" data-aos="zoom-in" data-aos-duration="1600">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Creative Edge Designs. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+  <script>
+    const navbar = document.querySelector('.navbar');
+    const movementStrength = 20;  // Control how much it moves
+  
+    document.addEventListener('mousemove', (e) => {
+      const pageX = e.clientX - window.innerWidth / 2;
+      const pageY = e.clientY - window.innerHeight / 2;
+  
+      const moveX = (movementStrength * pageX) / (window.innerWidth / 2);
+      const moveY = (movementStrength * pageY) / (window.innerHeight / 2);
+  
+      navbar.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
+>>>>>>> f85a6e2 (Update styles and content in HTML/CSS files)

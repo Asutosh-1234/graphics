@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .menu {
     text-align: center; /* Center the text in the menu */
     padding: 10px; /* Add some padding for better appearance */
@@ -6,3 +7,13 @@
 h1 {
     text-align: center; /* Center all headings */
 }
+=======
+.menu {
+    text-align: center; /* Center the text in the menu */
+    padding: 10px; /* Add some padding for better appearance */
+}
+
+h1 {
+    text-align: center; /* Center all headings */
+}
+>>>>>>> f85a6e2 (Update styles and content in HTML/CSS files)
